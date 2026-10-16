@@ -6,7 +6,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Ollama](https://img.shields.io/badge/Ollama-llama3.2:3b-black)](https://ollama.ai/)
 [![FAISS](https://img.shields.io/badge/Vector_Store-FAISS-blue)](https://github.com/facebookresearch/faiss)
-[![F1-Score](https://img.shields.io/badge/Qualité_RAG-100%25-success)](.)
+[![Qualité RAG](https://img.shields.io/badge/Qualité_RAG-100%25-success)](.)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ---
@@ -17,10 +17,12 @@
 - [📊 Résultats](#-résultats)
 - [🏗️ Architecture](#️-architecture)
 - [🛠️ Stack technique](#️-stack-technique)
+- [📸 Aperçu de l'interface](#-aperçu-de-linterface)
 - [🚀 Installation](#-installation)
 - [🎬 Utilisation](#-utilisation)
 - [📊 Évaluation](#-évaluation)
 - [📁 Structure du projet](#-structure-du-projet)
+- [🎓 Compétences mobilisées](#-compétences-mobilisées)
 - [👤 Auteur](#-auteur)
 
 ---
@@ -63,6 +65,8 @@ Automatiser le **service après-vente LVMH** en répondant automatiquement aux q
 - 💾 **Mémoire** : ~2 Go pour le modèle
 - 🌐 **100 % local** : aucune donnée ne sort de la machine
 
+![Métriques d'évaluation](assets/03_metrique.png)
+
 ---
 
 ## 🏗️ Architecture
@@ -93,6 +97,8 @@ Automatiser le **service après-vente LVMH** en répondant automatiquement aux q
 └──────────────────────┘
 ```
 
+![Pipeline RAG](assets/05_pipeline_rag.png)
+
 ### Pipeline RAG
 
 1. **Ingestion** : Découpage des documents LVMH en chunks
@@ -114,6 +120,43 @@ Automatiser le **service après-vente LVMH** en répondant automatiquement aux q
 | **Interface** | Streamlit |
 | **Parsing** | pypdf |
 | **Config** | python-dotenv |
+
+---
+
+## 📸 Aperçu de l'interface
+
+### 🖥️ Interface principale
+
+![Interface Streamlit](assets/01_affiche.png)
+
+### 💬 Exemple de question — Délai de retour
+
+![Question 1](assets/06_question1.png)
+
+### 📚 Sources utilisées
+
+![Sources](assets/15_sources.png)
+
+### 🎯 Toutes les questions testées
+
+| Question | Aperçu |
+|---|---|
+| Q1 — Délai de retour | ![Q1](assets/09_question1.png) |
+| Q2-Q3 — Livraison & Suivi | ![Q2-3](assets/10_question2_3.png) |
+| Q4-Q5 — Soldes & Remboursement | ![Q4-5](assets/11_question4_5.png) |
+| Q6 — Hors sujet (Birkin) | ![Q6](assets/12_question6.png) |
+
+### 📄 Rapport de synthèse
+
+![Rapport](assets/16_rapport.png)
+
+### 📊 Résultats d'évaluation
+
+![Rapports](assets/17_rapports.png)
+
+### 🛠️ Service client
+
+![Service](assets/14_service.png)
 
 ---
 
@@ -199,13 +242,6 @@ cd src
 python rag_pipeline.py
 ```
 
-### Test d'une question unique
-
-```bash
-cd src
-python -c "from rag_pipeline import RAGPipeline; p = RAGPipeline(); r = p.answer('Quel est le délai de retour ?'); print(r['answer'])"
-```
-
 ---
 
 ## 📊 Évaluation
@@ -269,6 +305,15 @@ LVMH_RAG_Assistant/
 │   ├── lvmh_index.faiss
 │   └── lvmh_index_docs.pkl
 │
+├── 📁 assets/                       # Captures d'écran (17 images)
+│   ├── 01_affiche.png
+│   ├── 02_articles.png
+│   ├── ...
+│   └── 17_rapports.png
+│
+├── 📁 .streamlit/
+│   └── config.toml                  # Thème Streamlit
+│
 ├── 📄 app.py                        # Interface Streamlit
 ├── 📄 evaluate.py                   # Grille d'évaluation
 ├── 📄 requirements.txt              # Dépendances
@@ -315,7 +360,7 @@ MIT License.
 
 **KABANGE MBUYA SYLVAIN**
 
-🎓 M2 Data Science — Horizon University  
+🎓 Data Science — Horizon University  
 📧 kabange.sylvain@horizon-university.tn  
 🔗 [GitHub @kabangesylvain-ui](https://github.com/kabangesylvain-ui)
 
