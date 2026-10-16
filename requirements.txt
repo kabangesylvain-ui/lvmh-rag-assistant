@@ -1,0 +1,12 @@
+# Core
+streamlit>=1.30
+pandas>=2.0
+python-dotenv>=1.0
+
+# RAG - Local
+sentence-transformers>=2.3
+faiss-cpu>=1.7
+ollama>=0.1
+
+# Parsing PDF
+pypdf>=3.17

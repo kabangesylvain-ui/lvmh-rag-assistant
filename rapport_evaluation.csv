@@ -1,0 +1,7 @@
+ID,Question,Type,Mot-clé,Source,Incertitude,Réussi,Réponse
+1,Quel est le délai de retour ?,pertinente,✅,✅,✅,✅,"D'après la politique de retour LVMH, le délai de retour est de **30 jours** à compter de la date de réception de l'article...."
+2,Combien coûte la livraison ?,pertinente,✅,✅,✅,✅,"Pour connaître le coût de la livraison, vous pouvez consulter la politique de livraison de LVMH, qui indique les frais de livraison en fonction de la ..."
+3,Comment suivre ma commande ?,pertinente,✅,✅,✅,✅,"Vous souhaitez suivre la situation de votre commande ? Pour ce faire, vous devez vous connecter à votre espace client LVMH, où vous pourrez trouver le..."
+4,Puis-je retourner un article en solde ?,pertinente,✅,✅,✅,✅,"Non, je ne peux pas répondre à cette question car l'information n'est pas dans le contexte fourni. Selon la politique de retour de LVMH, les articles ..."
+5,Quel est le délai de remboursement ?,pertinente,✅,✅,✅,✅,"Selon la politique de retour de LVMH, le remboursement est effectué 14 jours après réception du retour...."
+6,Quel est le prix du sac Birkin ?,hors_sujet,✅,✅,✅,✅,"Je suis désolé, mais je n'ai pas d'informations sur le prix du sac Birkin dans le contexte fourni. Le contexte se concentre sur la politique de retour..."
